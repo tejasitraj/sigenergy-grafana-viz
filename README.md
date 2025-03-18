@@ -60,6 +60,14 @@ Now we will calculate what the house is actually consuming. Now, focus on the el
 
 ```Accumulated Grid Import Energy``` + ```Accumulated Export Energy (from inverter)``` = ```Accumulated Grid Export Energy``` + ```Accumulated Import Energy (to inverter)``` + ```House Consumption```
 
+# Building the graphics
+I have added the FLux code for all cards in this graphic in this repository. Feel free to use and modify as appropriate to your installation. 
+
+# Next steps
+- Add a visual showing the revenue from exported energy
+- Use influxDB to create a custom sensor in home assistant for Solar Generated Energy - so it can be used in the energy dashboard (life would have been so much easier if Sigenergy just provided this datapoint on their modbus spec)
+- Use a time-series database that uses an SQL-like language instead. I got "locked in" to flux pretty early on; although it is not really commonly used in the home automation community (i think). Flux has its advantages, but some real downsides. Even InfluxData have acknowledged that Flux isn't everyone's cup of tea, so they have put it in "maintenance mode"
+
 Which gives us:
 
 ```House Consumption``` = ```Accumulated Grid Import Energy``` - ```Accumulated Grid Export Energy``` + ```Accumulated Export Energy (from inverter)``` - ```Accumulated Import Energy (to inverter)```
