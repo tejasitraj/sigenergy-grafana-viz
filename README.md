@@ -60,6 +60,8 @@ Now we will calculate what the house is actually consuming. Now, focus on the el
 
 ```Accumulated Grid Import Energy``` + ```Accumulated Export Energy (from inverter)``` = ```Accumulated Grid Export Energy``` + ```Accumulated Import Energy (to inverter)``` + ```House Consumption```
 
+Now, of course, you can't just go about adding and subtracting cumulative value sensors like this. But, the logic is good. In the code, you'll see how I have implemented this - I first do a ```difference()``` and an ```aggregate()``` to work out each sensor's marginal value every hour, and then add/subtract as appropriate.
+
 # Building the graphics
 I have added the FLux code for all cards in this graphic in this repository. Feel free to use and modify as appropriate to your installation. 
 
