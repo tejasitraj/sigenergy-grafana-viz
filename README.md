@@ -52,7 +52,7 @@ Hence:
 ```Accumulated Import Energy``` + ```Accumulated Solar (PV) Generated Energy``` + ```Accumulated Discharge Energy``` = ```Accumulated Export Energy``` + ```Accumulated Charge Energy```
 
 Which gives us:
-```Accumulated Solar (PV) Generated Energy``` = ```Accumulated Export Energy``` - ```Accumulated Import Energy``` + ```Accumulated Charge Energy``` + ```Accumulated Discharge Energy```
+```Accumulated Solar (PV) Generated Energy``` = ```Accumulated Export Energy``` - ```Accumulated Import Energy``` + ```Accumulated Charge Energy``` - ```Accumulated Discharge Energy```
 
 ## House Consumption 
 
